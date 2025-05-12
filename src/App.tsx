@@ -8,6 +8,8 @@ import { Features } from './components/Features'
 import { Prices } from './components/Prices';
 import { MobileApp } from "./components/MobileApp";
 
+import { Footer } from "./components/Footer"
+
 function App() {
 
   return (
@@ -18,6 +20,7 @@ function App() {
       <Features />
       <Prices />
       <MobileApp />
+      <Footer />
     </>
   )
 }
