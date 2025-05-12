@@ -1,0 +1,81 @@
+{
+    "navbar": {
+        "about": "About Us",
+        "features": "Features",
+        "prices": "Prices",
+        "getapp": "Get App"
+    },
+    "hero": {
+        "title": "Revolutionizing <br /> agriculture <br /> with technology",
+        "button": "Get Started"
+    },
+    "aboutus": {
+        "title": "About Us",
+        "description": "VacApp is a mobile app created for livestock farmers and veterinarians in Peru. Our mission is to facilitate livestock management through an accessible platform, even for those without prior technology experience. From animal registration to report generation, VacApp is made for you.",
+        "subtitle": "We connect livestock tradition with technological solutions."
+    },
+    "features": {
+        "title": "Key Features",
+        "list": [
+            {
+                "title": "Animal Registration",
+                "description": "Register and manage cattle with detailed records of origin, breed, and status."
+            },
+            {
+                "title": "Health Records",
+                "description": "Track vaccination history and medical treatments for each animal."
+            },
+            {
+                "title": "Smart Reminders",
+                "description": "Automated alerts for health checks, treatments, and key farming events."
+            },
+            {
+                "title": "Automated Reports",
+                "description": "Generate visual reports on health, production, and farm efficiency."
+            },
+            {
+                "title": "Medical Prescriptions",
+                "description": "Issue and store veterinary prescriptions with medication details and dosages."
+            },
+            {
+                "title": "Inventory Management",
+                "description": "Monitor supplies like vaccines, tools, and feed in real-time."
+            }
+        ]
+    },
+    "prices": {
+        "title": "Prices",
+        "plans": [
+            {
+                "name": "Free",
+                "price": "S/0",
+                "features": [
+                    "Register up to 10 animals.",
+                    "Basic access to health history.",
+                    "Limited reminders.",
+                    "View monthly reports in simple format.",
+                    "Email support."
+                ],
+                "description": "Start with basic features to manage your livestock."
+            },
+            {
+                "name": "Premium",
+                "price": "From S/49.90",
+                "features": [
+                    "Unlimited animal registration.",
+                    "Complete health and vaccination tracking.",
+                    "Inventory and product management.",
+                    "Priority support."
+                ],
+                "description": "All the power of VacApp to optimize your livestock production."
+            }
+        ]
+    },
+    "getapp": {
+        "title": "Try our app",
+        "description": "Discover a smarter way to manage your farm. Try our mobile app and enjoy all features at your fingertips — anytime, anywhere."
+    },
+    "footer": {
+        "title": "All rights reserved."
+    }
+}
