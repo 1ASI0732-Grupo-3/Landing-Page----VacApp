@@ -1,6 +1,8 @@
+import { Features } from './components/Features'
 function App() {
   return (
     <>
+      <Features />
     </>
   )
 }
