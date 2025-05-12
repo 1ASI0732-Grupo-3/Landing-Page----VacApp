@@ -1,0 +1,81 @@
+{
+    "navbar": {
+        "about": "Sobre nosotros",
+        "features": "Características",
+        "prices": "Precios",
+        "getapp": "Obtener aplicación"
+    },
+    "hero": {
+        "title": "Revolucionando <br /> la agricultura <br /> con tecnología",
+        "button": "Empezar"
+    },
+    "aboutus": {
+        "title": "Sobre nosotros",
+        "description": "VacApp es una aplicación móvil creada para ganaderos y veterinarios del Perú. Nuestra misión es facilitar la gestión ganadera mediante una plataforma accesible, incluso sin experiencia previa en tecnología. Desde el registro de animales hasta la generación de reportes, VacApp está hecha para ti.",
+        "subtitle": "Conectamos la tradición ganadera con soluciones tecnológicas."
+    },
+    "features": {
+        "title": "Funciones Clave",
+        "list": [
+            {
+                "title": "Registro de Animales",
+                "description": "Registra y gestiona ganado con información detallada de origen, raza y estado."
+            },
+            {
+                "title": "Historial de Salud",
+                "description": "Lleva el control de vacunas y tratamientos médicos para cada animal."
+            },
+            {
+                "title": "Recordatorios Inteligentes",
+                "description": "Alertas automáticas para chequeos, tratamientos y eventos importantes."
+            },
+            {
+                "title": "Reportes Automatizados",
+                "description": "Genera reportes visuales sobre salud, producción y eficiencia de la granja."
+            },
+            {
+                "title": "Recetas Médicas",
+                "description": "Emite y guarda recetas veterinarias con detalles de medicamentos y dosis."
+            },
+            {
+                "title": "Gestión de Inventario",
+                "description": "Monitorea suministros como vacunas, herramientas y alimentos en tiempo real."
+            }
+        ]
+    },
+    "prices": {
+        "title": "Precios",
+        "plans": [
+            {
+                "name": "Gratis",
+                "price": "S/0",
+                "features": [
+                    "Registro de hasta 10 animales.",
+                    "Acceso básico al historial sanitario.",
+                    "Recordatorios limitados.",
+                    "Visualización de reportes mensuales en formato simple.",
+                    "Soporte por correo electrónico."
+                ],
+                "description": "Empieza con funciones básicas para gestionar tu ganado."
+            },
+            {
+                "name": "Premium",
+                "price": "Desde S/49.90",
+                "features": [
+                    "Registro ilimitado de animales.",
+                    "Seguimiento completo de salud y vacunación.",
+                    "Gestión de inventario y productos.",
+                    "Soporte prioritario."
+                ],
+                "description": "Toda la potencia de VacApp para optimizar tu producción ganadera."
+            }
+        ]
+    },
+    "getapp": {
+        "title": "Prueba nuestra app",
+        "description": "Descarga VacApp y transforma la gestión de tu ganado. Registra, controla y optimiza la salud de tus animales desde tu móvil."
+    },
+    "footer": {
+        "title": "Todos los derechos reservados."
+    }
+}
