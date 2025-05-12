@@ -1,6 +1,9 @@
+import Prices from './components/Prices';
 function App() {
+
   return (
     <>
+      <Prices />
     </>
   )
 }
