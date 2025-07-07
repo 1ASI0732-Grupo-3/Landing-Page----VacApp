@@ -36,11 +36,9 @@ export const TermsModal = ({ onAccept }: Props) => {
             }}>
                 <b>
                     <h2 style={{ fontSize: "20px", marginBottom: "12px" }}>
-                        🌐 Terms and Conditions – VacApp Landing Page
+                        🌐 Terms and Conditions
                     </h2>
                 </b>
-                <p><strong>Effective Date:</strong> July 7, 2025</p>
-
                 <p>
                     Welcome to <strong>VacApp.com</strong>, the official landing page for our livestock management application.
                     By browsing or using this website, you agree to the following Terms and Conditions:
