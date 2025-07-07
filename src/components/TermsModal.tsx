@@ -3,6 +3,10 @@ interface Props {
 }
 
 export const TermsModal = ({ onAccept }: Props) => {
+    const handleReject = () => {
+        window.close();
+    };
+
     return (
         <div style={{
             position: "fixed",
@@ -17,7 +21,7 @@ export const TermsModal = ({ onAccept }: Props) => {
             padding: "20px"
         }}>
             <div style={{
-                backgroundColor: "#FFFF",
+                backgroundColor: "#FFF",
                 color: "#1D3620",
                 maxWidth: "600px",
                 width: "100%",
@@ -35,6 +39,7 @@ export const TermsModal = ({ onAccept }: Props) => {
                         🌐 Terms and Conditions – VacApp Landing Page
                     </h2>
                 </b>
+                <p><strong>Effective Date:</strong> July 7, 2025</p>
 
                 <p>
                     Welcome to <strong>VacApp.com</strong>, the official landing page for our livestock management application.
@@ -76,7 +81,14 @@ export const TermsModal = ({ onAccept }: Props) => {
                     <strong>support@vacapp.com</strong>
                 </p>
 
-                <div style={{ marginTop: "24px", textAlign: "center" }}>
+                <div style={{
+                    marginTop: "24px",
+                    display: "flex",
+                    flexDirection: "row",
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center"
+                }}>
                     <button
                         onClick={onAccept}
                         style={{
@@ -85,10 +97,28 @@ export const TermsModal = ({ onAccept }: Props) => {
                             border: "none",
                             padding: "10px 20px",
                             borderRadius: "6px",
-                            cursor: "pointer"
+                            cursor: "pointer",
+                            width: "100%",
+                            maxWidth: "240px"
                         }}
                     >
                         I Accept the Terms
+                    </button>
+
+                    <button
+                        onClick={handleReject}
+                        style={{
+                            backgroundColor: "transparent",
+                            color: "#1D3620",
+                            border: "2px solid #1D3620",
+                            padding: "10px 20px",
+                            borderRadius: "6px",
+                            cursor: "pointer",
+                            width: "100%",
+                            maxWidth: "240px"
+                        }}
+                    >
+                        I Do Not Accept
                     </button>
                 </div>
             </div>
