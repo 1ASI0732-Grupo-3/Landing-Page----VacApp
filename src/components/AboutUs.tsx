@@ -1,17 +1,150 @@
 import { useTranslation } from 'react-i18next';
 import farmer from '../assets/farmer3.webp';
+import { Target, Users, Globe, Leaf, Shield } from 'lucide-react';
 
 export function AboutUs() {
     const { t } = useTranslation();
 
     return (
-        <div className="py-5 lg:py-20 md:w-8/10 mx-auto font-mulish md:text-lg lg:text-2xl xl:text-4xl" id='aboutus'>
-            <h2 className="font-rokkitt text-7xl lg:text-8xl text-center font-semibold">{t('aboutus.title')}</h2><br />
-            <div className='flex flex-col md:flex-row w-full items-center gap-10 md:gap-5 lg:gap-20 xl:px-20'>
-                <p className='px-5 md:px-0 md:w-1/2 lg:w-6/10'>{t('aboutus.description')}</p>
-                <img src={farmer} className='w-8/10 md:w-1/2 lg:w-4/10 aspect-video object-cover object-center rounded-md drop-shadow-xl' />
-            </div><br />
-            <h3 className="text-lg md:text-lg lg:text-2xl xl:text-4xl italic text-center font-light">{t('aboutus.subtitle')}</h3>
-        </div>
+        <section className="py-20 bg-white" id='aboutus'>
+            <div className="max-w-7xl mx-auto px-4">
+                
+                {/* Header */}
+                <div className="text-center mb-16 space-y-4">
+                    <h2 className="font-rokkitt text-4xl md:text-5xl lg:text-6xl font-bold text-forest-green">
+                        {t('aboutus.title')}
+                    </h2>
+                    <div className="w-24 h-1 bg-gradient-to-r from-lime-neon to-forest-green mx-auto rounded-full"></div>
+                </div>
+
+                {/* Main Content */}
+                <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+                    
+                    {/* Left Side - Content */}
+                    <div className="space-y-8">
+                        <div className="space-y-6">
+                            <p className="text-lg md:text-xl text-forest-green/80 font-mulish leading-relaxed">
+                                {t('aboutus.description')}
+                            </p>
+                            
+                            <blockquote className="text-xl md:text-2xl font-rokkitt italic text-forest-green border-l-4 border-lime-neon pl-6 py-4 bg-lime-neon/5 rounded-r-xl">
+                                {t('aboutus.subtitle')}
+                            </blockquote>
+                        </div>
+
+                        {/* Mission & Vision */}
+                        <div className="grid sm:grid-cols-2 gap-6">
+                            <div className="bg-forest-green/5 rounded-2xl p-6">
+                                <div className="flex items-center gap-3 mb-4">
+                                    <Target className="text-lime-neon" size={24} />
+                                    <h3 className="font-bold text-forest-green font-rokkitt">Nuestra Misión</h3>
+                                </div>
+                                <p className="text-forest-green/70 text-sm">
+                                    Democratizar la tecnología ganadera, haciendo que herramientas profesionales 
+                                    sean accesibles para productores de todos los tamaños.
+                                </p>
+                            </div>
+
+                            <div className="bg-lime-neon/10 rounded-2xl p-6">
+                                <div className="flex items-center gap-3 mb-4">
+                                    <Globe className="text-forest-green" size={24} />
+                                    <h3 className="font-bold text-forest-green font-rokkitt">Nuestra Visión</h3>
+                                </div>
+                                <p className="text-forest-green/70 text-sm">
+                                    Ser la plataforma líder en gestión ganadera en Latinoamérica, 
+                                    impulsando la sostenibilidad y productividad del sector.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Stats */}
+                        <div className="grid grid-cols-3 gap-6 pt-6 border-t border-forest-green/20">
+                            <div className="text-center">
+                                <div className="text-2xl md:text-3xl font-bold text-forest-green">2024</div>
+                                <div className="text-sm text-forest-green/70">Fundación</div>
+                            </div>
+                            <div className="text-center">
+                                <div className="text-2xl md:text-3xl font-bold text-forest-green">15+</div>
+                                <div className="text-sm text-forest-green/70">Regiones</div>
+                            </div>
+                            <div className="text-center">
+                                <div className="text-2xl md:text-3xl font-bold text-forest-green">24/7</div>
+                                <div className="text-sm text-forest-green/70">Soporte</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Right Side - Image */}
+                    <div className="relative">
+                        {/* Decorative elements */}
+                        <div className="absolute -top-8 -left-8 w-32 h-32 bg-lime-neon/20 rounded-full blur-3xl"></div>
+                        <div className="absolute -bottom-8 -right-8 w-24 h-24 bg-forest-green/20 rounded-full blur-2xl"></div>
+                        
+                        {/* Main image */}
+                        <div className="relative z-10">
+                            <img 
+                                src={farmer} 
+                                alt="Ganadero usando VacApp"
+                                className="w-full aspect-[4/3] object-cover rounded-3xl shadow-2xl"
+                            />
+                            
+                            {/* Overlay badge */}
+                            <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-3 h-3 bg-lime-neon rounded-full animate-pulse"></div>
+                                    <span className="text-forest-green font-semibold text-sm">
+                                        Tecnología en el campo
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Values Section */}
+                <div className="bg-gradient-to-br from-forest-green/5 to-lime-neon/5 rounded-3xl p-8 md:p-12">
+                    <div className="text-center mb-12">
+                        <h3 className="text-2xl md:text-3xl font-bold text-forest-green font-rokkitt mb-4">
+                            Nuestros Valores
+                        </h3>
+                        <p className="text-forest-green/70 font-mulish max-w-2xl mx-auto">
+                            Los principios que guían cada decisión en VacApp
+                        </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-3 gap-8">
+                        <div className="text-center group">
+                            <div className="w-16 h-16 bg-lime-neon/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-lime-neon transition-all duration-300">
+                                <Leaf className="text-forest-green group-hover:text-white" size={24} />
+                            </div>
+                            <h4 className="font-bold text-forest-green mb-2 font-rokkitt">Sostenibilidad</h4>
+                            <p className="text-forest-green/70 text-sm">
+                                Tecnología que respeta el medio ambiente y promueve prácticas ganaderas responsables.
+                            </p>
+                        </div>
+
+                        <div className="text-center group">
+                            <div className="w-16 h-16 bg-forest-green/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-forest-green transition-all duration-300">
+                                <Users className="text-forest-green group-hover:text-white" size={24} />
+                            </div>
+                            <h4 className="font-bold text-forest-green mb-2 font-rokkitt">Comunidad</h4>
+                            <p className="text-forest-green/70 text-sm">
+                                Construimos junto a ganaderos, entendiendo sus necesidades reales del día a día.
+                            </p>
+                        </div>
+
+                        <div className="text-center group">
+                            <div className="w-16 h-16 bg-lime-neon/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-lime-neon transition-all duration-300">
+                                <Shield className="text-forest-green group-hover:text-white" size={24} />
+                            </div>
+                            <h4 className="font-bold text-forest-green mb-2 font-rokkitt">Confiabilidad</h4>
+                            <p className="text-forest-green/70 text-sm">
+                                Datos seguros, funcionamiento estable y soporte cuando más lo necesitas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     )
 }

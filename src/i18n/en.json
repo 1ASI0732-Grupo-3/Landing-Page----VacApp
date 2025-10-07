@@ -11,71 +11,219 @@
     },
     "aboutus": {
         "title": "About Us",
-        "description": "VacApp is a mobile app created for livestock farmers and veterinarians in Peru. Our mission is to facilitate livestock management through an accessible platform, even for those without prior technology experience. From animal registration to report generation, VacApp is made for you.",
-        "subtitle": "We connect livestock tradition with technological solutions."
+        "description": "VacApp is a mobile application created for farmers and veterinarians in Peru. Our mission is to facilitate livestock management through an accessible platform, even for those without prior technological experience. From animal registration to report generation, VacApp is made for you.",
+        "subtitle": "Connecting livestock tradition with technological solutions.",
+        "mission": {
+            "title": "Our Mission",
+            "description": "Democratize livestock technology, making professional tools accessible to producers of all sizes."
+        },
+        "vision": {
+            "title": "Our Vision",
+            "description": "To be the leading livestock management platform in Latin America, driving sustainability and productivity in the sector."
+        },
+        "values": {
+            "title": "Our Values",
+            "subtitle": "The principles that guide every decision at VacApp",
+            "sustainability": {
+                "title": "Sustainability",
+                "description": "Technology that respects the environment and promotes responsible livestock practices."
+            },
+            "community": {
+                "title": "Community",
+                "description": "We build alongside farmers, understanding their real day-to-day needs."
+            },
+            "reliability": {
+                "title": "Reliability",
+                "description": "Secure data, stable operation and support when you need it most."
+            }
+        },
+        "stats": {
+            "founded": "Founded",
+            "regions": "Regions",
+            "support": "Support"
+        }
     },
     "features": {
-        "title": "Key Features",
+        "title": "Características Clave",
+        "subtitle": "Herramientas profesionales diseñadas específicamente para la gestión ganadera moderna",
+        "cta": {
+            "title": "Optimiza tu Producción Ganadera",
+            "description": "Únete a cientos de ganaderos que ya transformaron su gestión con VacApp. Reduce costos, mejora la salud del ganado y aumenta tu productividad.",
+            "buttons": {
+                "trial": "Comenzar Prueba Gratuita",
+                "demo": "Ver Demo en Vivo"
+            },
+            "stats": [
+                { "value": "+500", "label": "Granjas Activas" },
+                { "value": "50K+", "label": "Animales Registrados" },
+                { "value": "98%", "label": "Satisfacción" }
+            ]
+        },
         "list": [
             {
-                "title": "Animal Registration",
-                "description": "Register and manage cattle with detailed records of origin, breed, and status."
+                "title": "Animal Registry",
+                "description": "Register and manage livestock with detailed records of origin, breed, and status."
             },
             {
-                "title": "Health Records",
+                "title": "Medical History",
                 "description": "Track vaccination history and medical treatments for each animal."
             },
             {
                 "title": "Smart Reminders",
-                "description": "Automated alerts for health checks, treatments, and key farming events."
+                "description": "Automated alerts for health checkups, treatments, and key farm events."
             },
             {
                 "title": "Automated Reports",
-                "description": "Generate visual reports on health, production, and farm efficiency."
+                "description": "Generate visual reports on farm health, production, and efficiency."
             },
             {
                 "title": "Medical Prescriptions",
-                "description": "Issue and store veterinary prescriptions with medication details and dosages."
+                "description": "Issue and store veterinary prescriptions with medication and dosage details."
             },
             {
                 "title": "Inventory Management",
-                "description": "Monitor supplies like vaccines, tools, and feed in real-time."
+                "description": "Monitor supplies like vaccines, tools, and feed in real time."
             }
         ]
     },
     "prices": {
-        "title": "Prices",
+        "title": "Choose Your Plan",
         "plans": [
             {
-                "name": "Free",
-                "price": "S/0",
+                "name": "Starter",
+                "price": "Free",
                 "features": [
-                    "Register up to 10 animals.",
-                    "Basic access to health history.",
-                    "Limited reminders.",
-                    "View monthly reports in simple format.",
-                    "Email support."
+                    "Up to 25 livestock records",
+                    "Basic health tracking",
+                    "Simple vaccination reminders",
+                    "Monthly reports",
+                    "Email support",
+                    "Mobile app access"
                 ],
-                "description": "Start with basic features to manage your livestock."
+                "description": "Perfect for small farms getting started"
             },
             {
-                "name": "Premium",
-                "price": "From S/49.90",
+                "name": "Professional",
+                "price": "$15.90",
                 "features": [
-                    "Unlimited animal registration.",
-                    "Complete health and vaccination tracking.",
-                    "Inventory and product management.",
-                    "Priority support."
+                    "Unlimited livestock records",
+                    "Advanced health and vaccination tracking",
+                    "Inventory management (feed, medicines)",
+                    "Staff management and permissions",
+                    "Real-time analysis and reports",
+                    "Priority support",
+                    "Cloud synchronization",
+                    "Campaign management"
                 ],
-                "description": "All the power of VacApp to optimize your livestock production."
+                "description": "Complete management for growing operations"
+            },
+            {
+                "name": "Enterprise",
+                "price": "Custom",
+                "features": [
+                    "Multi-farm management",
+                    "Advanced API integrations",
+                    "Custom reports and dashboards",
+                    "Dedicated account manager",
+                    "White-label options",
+                    "Custom training and onboarding",
+                    "Advanced security features",
+                    "24/7 priority support"
+                ],
+                "description": "Large-scale operations with custom needs"
             }
         ]
     },
-    "getapp": {
-        "title": "Try our app",
-        "description": "Discover a smarter way to manage your farm. Try our mobile app and enjoy all features at your fingertips — anytime, anywhere."
+    "mobileApp": {
+        "title": "Download our app now",
+        "description": "Experience the full power of VacApp on your Android and iOS devices."
+    },
+    "testimonials": {
+        "title": "What our users say",
+        "subtitle": "Over 500 farmers already trust VacApp to manage their operations",
+        "users": [
+            {
+                "name": "Carlos Mendoza",
+                "role": "Farmer - Cusco",
+                "text": "VacApp revolutionized my livestock management. Now I control 200 head of cattle from my phone and reduced mortality by 30%."
+            },
+            {
+                "name": "María Torres",
+                "role": "Veterinarian - Arequipa", 
+                "text": "As a veterinarian, VacApp allows me to better track my patients. The automated reports are incredible."
+            },
+            {
+                "name": "Roberto Silva",
+                "role": "Livestock Company - Lima",
+                "text": "We manage 5 farms with VacApp. Real-time sync and inventory control saves us hours of daily work."
+            }
+        ]
+    },
+    "callToAction": {
+        "title": "Ready to digitize your ranch?",
+        "subtitle": "Join the livestock revolution. Start today and transform your management with VacApp.",
+        "benefits": [
+            "30-day free trial",
+            "No long-term commitments",
+            "Technical support included", 
+            "Free data migration"
+        ],
+        "buttons": {
+            "web": "Start on Web",
+            "mobile": "Download App"
+        },
+        "trust": {
+            "title": "Trusted by farmers throughout Peru",
+            "badges": [
+                "ISO 27001 Certified",
+                "Data in Peru",
+                "GDPR Compliant"
+            ]
+        }
     },
     "footer": {
-        "title": "All rights reserved."
+        "description": "VacApp is the complete SaaS platform that digitalizes livestock management. Unifies farm, cattle, staff, and campaign management in one solution accessible from web and mobile.",
+        "links": {
+            "title": "Quick Links",
+            "about": "About Us",
+            "features": "Features",
+            "pricing": "Pricing",
+            "download": "Download App"
+        },
+        "contact": {
+            "title": "Contact"
+        },
+        "legal": {
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Service",
+            "support": "Support"
+        },
+        "copyright": "© VacApp. All rights reserved."
+    },
+    "termsModal": {
+        "title": "Terms and Conditions",
+        "content": "Welcome to VacApp! By using our service, you accept the following terms and conditions...",
+        "accept": "Accept and Continue"
+    },
+    "auth": {
+        "login": {
+            "title": "Sign In",
+            "subtitle": "Sign in to your account to access the app",
+            "button": "Sign In",
+            "noAccount": "Don't have an account?"
+        },
+        "register": {
+            "title": "Sign Up",
+            "subtitle": "Create a new account to start using VacApp",
+            "button": "Sign Up",
+            "hasAccount": "Already have an account?"
+        },
+        "email": "Email Address",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "name": "Full Name",
+        "forgotPassword": "Forgot your password?",
+        "or": "or",
+        "backToHome": "Back to Home"
     }
 }

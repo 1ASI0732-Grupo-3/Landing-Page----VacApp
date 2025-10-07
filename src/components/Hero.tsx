@@ -1,24 +1,50 @@
 import { Trans, useTranslation } from 'react-i18next';
 import hero from '../assets/hero.webp';
+import { ArrowRight } from 'lucide-react';
 
 export function Hero() {
     const { t } = useTranslation();
     return (
-        <div className='relative h-80 md:h-fit lg:h-200 font-rokkitt text-light-gray'>
-            <img src={hero} className='h-full w-full object-cover object-center' />
-            <div className="absolute bottom-0 left-0 w-full h-25 bg-gradient-to-b from-trasparent to-light-gray pointer-events-none" />
-            <div className="absolute inset-0 mx-auto my-10 md:mx-0 md:my-0 md:top-1/4 lg:top-60 md:left-20 flex w-fit h-fit ">
-                <div className='flex flex-col gap-5 md:gap-10'>
-                    <div className='bg-forest-green/70 px-10 py-5 rounded-sm'>
-                        <h1 className='text-3xl text-center md:text-left md:text-5xl lg:text-6xl xl:text-8xl'>
-                            <Trans i18nKey="hero.title" components={{ br: <br /> }} />
-                        </h1>
+        <div className='relative min-h-screen flex items-center justify-center overflow-hidden'>
+            {/* Background Image */}
+            <div className="absolute inset-0">
+                <img 
+                    src={hero} 
+                    className='h-full w-full object-cover object-center' 
+                    alt="VacApp Hero"
+                />
+                <div className="absolute inset-0 bg-black/40" />
+            </div>
+            
+            {/* Content */}
+            <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+                <div className='space-y-8 animate-fade-in'>
+                    <h1 className='text-4xl md:text-6xl lg:text-7xl font-bold font-rokkitt text-white leading-tight'>
+                        <Trans i18nKey="hero.title" components={{ br: <br /> }} />
+                    </h1>
+                    <p className="text-lg md:text-xl text-white/90 font-mulish max-w-2xl mx-auto">
+                        {t('aboutus.subtitle')}
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button 
+                            className='group bg-lime-neon text-forest-green font-semibold px-8 py-4 font-mulish rounded-full cursor-pointer transition-all duration-300 hover:bg-white hover:scale-105 flex items-center gap-2 justify-center text-lg' 
+                            onClick={handleScroll("app")}
+                        >
+                            {t('hero.button')}
+                            <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+                        </button>
+                        <button 
+                            className='group border-2 border-white text-white font-semibold px-8 py-4 font-mulish rounded-full cursor-pointer transition-all duration-300 hover:bg-white hover:text-forest-green flex items-center gap-2 justify-center text-lg' 
+                            onClick={handleScroll("aboutus")}
+                        >
+                            {t('navbar.about')}
+                        </button>
                     </div>
-                    <button className='bg-light-gray text-forest-green font-semibold w-fit px-5 py-2 font-mulish rounded-sm cursor-pointer mx-auto md:mx-0 md:text-2xl' onClick={handleScroll("app")}>
-                        {t('hero.button')}
-                    </button>
                 </div>
             </div>
+            
+            {/* Gradient overlay at bottom */}
+            <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent" />
         </div>
     )
 }

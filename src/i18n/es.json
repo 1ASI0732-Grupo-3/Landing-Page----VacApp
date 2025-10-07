@@ -10,72 +10,220 @@
         "button": "Empezar"
     },
     "aboutus": {
-        "title": "Sobre nosotros",
-        "description": "VacApp es una aplicación móvil creada para ganaderos y veterinarios del Perú. Nuestra misión es facilitar la gestión ganadera mediante una plataforma accesible, incluso sin experiencia previa en tecnología. Desde el registro de animales hasta la generación de reportes, VacApp está hecha para ti.",
-        "subtitle": "Conectamos la tradición ganadera con soluciones tecnológicas."
+        "title": "Nosotros",
+        "description": "VacApp es una aplicación móvil creada para ganaderos y veterinarios en Perú. Nuestra misión es facilitar el manejo ganadero a través de una plataforma accesible, incluso para aquellos sin experiencia tecnológica previa. Desde el registro de animales hasta la generación de reportes, VacApp está hecho para ti.",
+        "subtitle": "Conectamos la tradición ganadera con soluciones tecnológicas.",
+        "mission": {
+            "title": "Nuestra Misión",
+            "description": "Democratizar la tecnología ganadera, haciendo que herramientas profesionales sean accesibles para productores de todos los tamaños."
+        },
+        "vision": {
+            "title": "Nuestra Visión", 
+            "description": "Ser la plataforma líder en gestión ganadera en Latinoamérica, impulsando la sostenibilidad y productividad del sector."
+        },
+        "values": {
+            "title": "Nuestros Valores",
+            "subtitle": "Los principios que guían cada decisión en VacApp",
+            "sustainability": {
+                "title": "Sostenibilidad",
+                "description": "Tecnología que respeta el medio ambiente y promueve prácticas ganaderas responsables."
+            },
+            "community": {
+                "title": "Comunidad",
+                "description": "Construimos junto a ganaderos, entendiendo sus necesidades reales del día a día."
+            },
+            "reliability": {
+                "title": "Confiabilidad", 
+                "description": "Datos seguros, funcionamiento estable y soporte cuando más lo necesitas."
+            }
+        },
+        "stats": {
+            "founded": "Fundación",
+            "regions": "Regiones",
+            "support": "Soporte"
+        }
     },
     "features": {
-        "title": "Funciones Clave",
+        "title": "Características Clave",
+        "subtitle": "Herramientas profesionales diseñadas específicamente para la gestión ganadera moderna",
+        "cta": {
+            "title": "Optimiza tu Producción Ganadera",
+            "description": "Únete a cientos de ganaderos que ya transformaron su gestión con VacApp. Reduce costos, mejora la salud del ganado y aumenta tu productividad.",
+            "buttons": {
+                "trial": "Comenzar Prueba Gratuita",
+                "demo": "Ver Demo en Vivo"
+            },
+            "stats": [
+                { "value": "+500", "label": "Granjas Activas" },
+                { "value": "50K+", "label": "Animales Registrados" },
+                { "value": "98%", "label": "Satisfacción" }
+            ]
+        },
         "list": [
             {
                 "title": "Registro de Animales",
-                "description": "Registra y gestiona ganado con información detallada de origen, raza y estado."
+                "description": "Registra y gestiona ganado con registros detallados de origen, raza y estado."
             },
             {
-                "title": "Historial de Salud",
-                "description": "Lleva el control de vacunas y tratamientos médicos para cada animal."
+                "title": "Historial Médico",
+                "description": "Rastrea el historial de vacunación y tratamientos médicos de cada animal."
             },
             {
                 "title": "Recordatorios Inteligentes",
-                "description": "Alertas automáticas para chequeos, tratamientos y eventos importantes."
+                "description": "Alertas automatizadas para controles de salud, tratamientos y eventos clave de la granja."
             },
             {
                 "title": "Reportes Automatizados",
                 "description": "Genera reportes visuales sobre salud, producción y eficiencia de la granja."
             },
             {
-                "title": "Recetas Médicas",
-                "description": "Emite y guarda recetas veterinarias con detalles de medicamentos y dosis."
+                "title": "Prescripciones Médicas",
+                "description": "Emite y almacena prescripciones veterinarias con detalles de medicamentos y dosis."
             },
             {
                 "title": "Gestión de Inventario",
-                "description": "Monitorea suministros como vacunas, herramientas y alimentos en tiempo real."
+                "description": "Monitorea suministros como vacunas, herramientas y alimento en tiempo real."
             }
         ]
     },
     "prices": {
-        "title": "Precios",
+        "title": "Elige Tu Plan",
         "plans": [
             {
-                "name": "Gratis",
-                "price": "S/0",
+                "name": "Inicial",
+                "price": "Gratis",
                 "features": [
-                    "Registro de hasta 10 animales.",
-                    "Acceso básico al historial sanitario.",
-                    "Recordatorios limitados.",
-                    "Visualización de reportes mensuales en formato simple.",
-                    "Soporte por correo electrónico."
+                    "Hasta 25 registros de ganado",
+                    "Seguimiento básico de salud",
+                    "Recordatorios simples de vacunación",
+                    "Reportes mensuales",
+                    "Soporte por email",
+                    "Acceso a app móvil"
                 ],
-                "description": "Empieza con funciones básicas para gestionar tu ganado."
+                "description": "Perfecto para granjas pequeñas comenzando"
             },
             {
-                "name": "Premium",
-                "price": "Desde S/49.90",
+                "name": "Profesional",
+                "price": "S/49.90",
                 "features": [
-                    "Registro ilimitado de animales.",
-                    "Seguimiento completo de salud y vacunación.",
-                    "Gestión de inventario y productos.",
-                    "Soporte prioritario."
+                    "Registro ilimitado de ganado",
+                    "Seguimiento avanzado de salud y vacunas",
+                    "Gestión de inventario (alimentos, medicinas)",
+                    "Gestión de personal y permisos",
+                    "Análisis y reportes en tiempo real",
+                    "Soporte prioritario",
+                    "Sincronización en la nube",
+                    "Gestión de campañas"
                 ],
-                "description": "Toda la potencia de VacApp para optimizar tu producción ganadera."
+                "description": "Gestión completa para operaciones en crecimiento"
+            },
+            {
+                "name": "Empresarial",
+                "price": "Personalizado",
+                "features": [
+                    "Gestión de múltiples granjas",
+                    "Integraciones API avanzadas",
+                    "Reportes y dashboards personalizados",
+                    "Gerente de cuenta dedicado",
+                    "Opciones de marca blanca",
+                    "Capacitación y onboarding personalizado",
+                    "Características de seguridad avanzadas",
+                    "Soporte prioritario 24/7"
+                ],
+                "description": "Operaciones a gran escala con necesidades personalizadas"
             }
         ]
     },
-    "getapp": {
-        "title": "Prueba nuestra app",
-        "description": "Descarga VacApp y transforma la gestión de tu ganado. Registra, controla y optimiza la salud de tus animales desde tu móvil."
+    "mobileApp": {
+        "title": "Descarga nuestra app ahora",
+        "description": "Experimenta todo el poder de VacApp en tus dispositivos Android e iOS."
+    },
+    "testimonials": {
+        "title": "Lo que dicen nuestros usuarios",
+        "subtitle": "Más de 500 ganaderos ya confían en VacApp para gestionar sus operaciones",
+        "users": [
+            {
+                "name": "Carlos Mendoza",
+                "role": "Ganadero - Cusco",
+                "text": "VacApp revolucionó mi gestión ganadera. Ahora controlo 200 cabezas de ganado desde mi celular y he reducido la mortalidad en un 30%."
+            },
+            {
+                "name": "María Torres",
+                "role": "Veterinaria - Arequipa", 
+                "text": "Como veterinaria, VacApp me permite dar un mejor seguimiento a mis pacientes. Los reportes automáticos son increíbles."
+            },
+            {
+                "name": "Roberto Silva",
+                "role": "Empresa Ganadera - Lima",
+                "text": "Manejamos 5 establos con VacApp. La sincronización en tiempo real y el control de inventarios nos ahorra horas de trabajo diario."
+            }
+        ]
+    },
+    "callToAction": {
+        "title": "¿Listo para digitalizar tu rancho?",
+        "subtitle": "Únete a la revolución ganadera. Comienza hoy y transforma tu gestión con VacApp.",
+        "benefits": [
+            "Prueba gratuita de 30 días",
+            "Sin compromisos a largo plazo",
+            "Soporte técnico incluido", 
+            "Migración de datos gratis"
+        ],
+        "buttons": {
+            "web": "Comenzar en Web",
+            "mobile": "Descargar App"
+        },
+        "trust": {
+            "title": "Confiado por ganaderos en todo Perú",
+            "badges": [
+                "Certificado ISO 27001",
+                "Datos en Perú",
+                "GDPR Compliant"
+            ]
+        }
     },
     "footer": {
-        "title": "Todos los derechos reservados."
+        "description": "VacApp es la plataforma SaaS completa que digitaliza el manejo ganadero. Unifica gestión de establos, bovinos, personal y campañas en una solución accesible desde web y móvil.",
+        "links": {
+            "title": "Enlaces Rápidos",
+            "about": "Nosotros",
+            "features": "Funcionalidades",
+            "pricing": "Precios",
+            "download": "Descargar App"
+        },
+        "contact": {
+            "title": "Contacto"
+        },
+        "legal": {
+            "privacy": "Política de Privacidad",
+            "terms": "Términos de Servicio",
+            "support": "Soporte"
+        },
+        "copyright": "© VacApp. Todos los derechos reservados."
+    },
+    "termsModal": {
+        "title": "Términos y Condiciones",
+        "content": "¡Bienvenido a VacApp! Al usar nuestro servicio, aceptas los siguientes términos y condiciones...",
+        "accept": "Aceptar y Continuar"
+    },
+    "auth": {
+        "login": {
+            "title": "Iniciar Sesión",
+            "subtitle": "Inicia sesión en tu cuenta para acceder a la app",
+            "button": "Iniciar Sesión",
+            "noAccount": "¿No tienes una cuenta?"
+        },
+        "register": {
+            "title": "Registrarse",
+            "subtitle": "Crea una nueva cuenta para comenzar a usar VacApp",
+            "button": "Registrarse",
+            "hasAccount": "¿Ya tienes una cuenta?"
+        },
+        "email": "Correo Electrónico",
+        "password": "Contraseña",
+        "confirmPassword": "Confirmar Contraseña",
+        "name": "Nombre Completo",
+        "forgotPassword": "¿Olvidaste tu contraseña?",
+        "or": "o",
+        "backToHome": "Volver al Inicio"
     }
 }

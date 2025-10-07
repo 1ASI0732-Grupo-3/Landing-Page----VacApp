@@ -1,0 +1,200 @@
+{
+    "navbar": {
+        "about": "关于我们",
+        "features": "功能特色",
+        "prices": "价格",
+        "getapp": "下载应用"
+    },
+    "hero": {
+        "title": "用科技革命<br />农业<br />",
+        "button": "开始使用"
+    },
+    "aboutus": {
+        "title": "关于我们",
+        "description": "VacApp是一款专为秘鲁牲畜饲养者和兽医创建的移动应用。我们的使命是通过一个易于使用的平台促进牲畜管理，即使是没有技术经验的人也能轻松使用。从动物登记到报告生成，VacApp是为您量身定制的。",
+        "subtitle": "我们将传统畜牧业与技术解决方案相连接。"
+    },
+    "features": {
+        "title": "核心功能",
+        "subtitle": "专为现代牲畜管理设计的专业工具",
+        "cta": {
+            "title": "优化您的牲畜生产",
+            "description": "加入数百位已经用VacApp改变管理方式的农民。降低成本，改善牛群健康，提高生产力。",
+            "buttons": {
+                "trial": "开始免费试用",
+                "demo": "观看实时演示"
+            },
+            "stats": [
+                { "value": "+500", "label": "活跃农场" },
+                { "value": "50K+", "label": "注册动物" },
+                { "value": "98%", "label": "满意度" }
+            ]
+        },
+        "list": [
+            {
+                "title": "动物登记",
+                "description": "登记和管理牲畜，详细记录来源、品种和状态。"
+            },
+            {
+                "title": "健康记录",
+                "description": "跟踪每只动物的疫苗接种历史和医疗治疗。"
+            },
+            {
+                "title": "智能提醒",
+                "description": "健康检查、治疗和关键农业事件的自动提醒。"
+            },
+            {
+                "title": "自动报告",
+                "description": "生成关于健康、生产和农场效率的可视化报告。"
+            },
+            {
+                "title": "医疗处方",
+                "description": "开具和存储兽医处方，包含药物详情和剂量。"
+            },
+            {
+                "title": "库存管理",
+                "description": "实时监控疫苗、工具和饲料等用品。"
+            }
+        ]
+    },
+    "prices": {
+        "title": "选择您的计划",
+        "plans": [
+            {
+                "name": "入门版",
+                "price": "免费",
+                "features": [
+                    "最多25头牛只登记",
+                    "基础健康追踪",
+                    "简单疫苗提醒",
+                    "月度报告",
+                    "邮件支持",
+                    "移动应用访问"
+                ],
+                "description": "适合刚起步的小型农场"
+            },
+            {
+                "name": "专业版",
+                "price": "S/49.90",
+                "features": [
+                    "无限牛只登记",
+                    "高级健康和疫苗追踪",
+                    "库存管理（饲料、药品）",
+                    "员工管理和权限",
+                    "实时分析和报告",
+                    "优先支持",
+                    "云端同步",
+                    "活动管理"
+                ],
+                "description": "成长中运营的完整管理"
+            },
+            {
+                "name": "企业版",
+                "price": "定制",
+                "features": [
+                    "多农场管理",
+                    "高级API集成",
+                    "定制报告和仪表板",
+                    "专属客户经理",
+                    "白标选项",
+                    "定制培训和入职",
+                    "高级安全功能",
+                    "24/7优先支持"
+                ],
+                "description": "具有定制需求的大规模运营"
+            }
+        ]
+    },
+    "mobileApp": {
+        "title": "立即下载我们的应用",
+        "description": "在Android和iOS设备上体验VacApp的全部功能。"
+    },
+    "testimonials": {
+        "title": "用户评价",
+        "subtitle": "已有500多名农民信任VacApp管理他们的运营",
+        "users": [
+            {
+                "name": "卡洛斯·门多萨",
+                "role": "牧场主 - 库斯科",
+                "text": "VacApp彻底改变了我的牲畜管理。现在我用手机控制200头牛，死亡率降低了30%。"
+            },
+            {
+                "name": "玛丽亚·托雷斯",
+                "role": "兽医 - 阿雷基帕",
+                "text": "作为兽医，VacApp让我能更好地跟踪我的患者。自动报告功能非常棒。"
+            },
+            {
+                "name": "罗伯托·席尔瓦", 
+                "role": "畜牧公司 - 利马",
+                "text": "我们用VacApp管理5个农场。实时同步和库存控制为我们节省了大量日常工作时间。"
+            }
+        ]
+    },
+    "callToAction": {
+        "title": "准备好数字化您的牧场了吗？",
+        "subtitle": "加入畜牧业革命。立即开始，用VacApp转变您的管理方式。",
+        "benefits": [
+            "30天免费试用",
+            "无长期承诺",
+            "包含技术支持",
+            "免费数据迁移"
+        ],
+        "buttons": {
+            "web": "在网页开始",
+            "mobile": "下载应用"
+        },
+        "trust": {
+            "title": "受到秘鲁各地农民信赖",
+            "badges": [
+                "ISO 27001认证",
+                "数据在秘鲁",
+                "GDPR合规"
+            ]
+        }
+    },
+    "footer": {
+        "description": "VacApp是完整的SaaS平台，数字化畜牧管理。统一牧场管理、牛群、员工和活动在一个可从网页和移动端访问的解决方案中。",
+        "links": {
+            "title": "快速链接",
+            "about": "关于我们",
+            "features": "功能特色",
+            "pricing": "价格",
+            "download": "下载应用"
+        },
+        "contact": {
+            "title": "联系我们"
+        },
+        "legal": {
+            "privacy": "隐私政策",
+            "terms": "服务条款",
+            "support": "技术支持"
+        },
+        "copyright": "© VacApp. 保留所有权利。"
+    },
+    "termsModal": {
+        "title": "条款和条件",
+        "content": "欢迎使用VacApp！通过使用我们的服务，您同意以下条款和条件...",
+        "accept": "接受并继续"
+    },
+    "auth": {
+        "login": {
+            "title": "登录",
+            "subtitle": "登录您的账户以访问应用",
+            "button": "登录",
+            "noAccount": "还没有账户？"
+        },
+        "register": {
+            "title": "注册",
+            "subtitle": "创建新账户开始使用VacApp",
+            "button": "注册",
+            "hasAccount": "已有账户？"
+        },
+        "email": "电子邮箱",
+        "password": "密码",
+        "confirmPassword": "确认密码",
+        "name": "姓名",
+        "forgotPassword": "忘记密码？",
+        "or": "或",
+        "backToHome": "返回首页"
+    }
+}
