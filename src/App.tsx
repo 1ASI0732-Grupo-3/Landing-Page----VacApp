@@ -15,7 +15,7 @@ import { TermsModal } from "./components/TermsModal";
 function RedirectToApp({ path }: { path: string }) {
   useEffect(() => {
     // Cambia esta URL por la URL de tu app web
-    const appWebUrl = "https://tu-app-web.com"; // 🚨 CAMBIA ESTA URL
+    const appWebUrl = "https://vacappfrontend.netlify.app/auth"; // 🚨 CAMBIA ESTA URL
     window.location.href = `${appWebUrl}${path}`;
   }, [path]);
 
