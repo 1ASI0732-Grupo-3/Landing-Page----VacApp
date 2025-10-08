@@ -250,6 +250,15 @@
         "content": "欢迎使用VacApp！通过使用我们的服务，您同意以下条款和条件...",
         "accept": "接受并继续"
     },
+    "consent": {
+        "title": "我们重视您的隐私",
+        "message": "我们使用Cookies来改善您的体验、分析网站使用情况并展示相关内容。继续浏览即表示您接受我们的政策。您可以查看《条款与条件》。",
+        "acceptAll": "全部接受",
+        "reject": "拒绝",
+        "viewTerms": "查看条款",
+        "requiredTitle": "需要操作",
+        "requiredNotice": "要查看内容，您需要接受Cookies以及《条款与条件》。"
+    },
     "auth": {
         "login": {
             "title": "登录",

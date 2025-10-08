@@ -250,6 +250,15 @@
         "content": "Welcome to VacApp! By using our service, you accept the following terms and conditions...",
         "accept": "Accept and Continue"
     },
+    "consent": {
+        "title": "Your privacy matters",
+        "message": "We use cookies to improve your experience, analyze site usage, and show relevant content. By continuing you accept our policy. You can review the Terms and Conditions.",
+        "acceptAll": "Accept all",
+        "reject": "Reject",
+        "viewTerms": "View Terms",
+        "requiredTitle": "Action required",
+        "requiredNotice": "To view the content you need to accept cookies and the Terms and Conditions."
+    },
     "auth": {
         "login": {
             "title": "Sign In",

@@ -1,11 +1,12 @@
+import { useTranslation } from 'react-i18next';
+
 interface Props {
     onAccept: () => void;
+    onReject: () => void;
 }
 
-export const TermsModal = ({ onAccept }: Props) => {
-    const handleReject = () => {
-        window.close();
-    };
+export const TermsModal = ({ onAccept, onReject }: Props) => {
+    const { t } = useTranslation();
 
     return (
         <div style={{
@@ -36,12 +37,11 @@ export const TermsModal = ({ onAccept }: Props) => {
             }}>
                 <b>
                     <h2 style={{ fontSize: "20px", marginBottom: "12px" }}>
-                        🌐 Terms and Conditions
+                        🌐 {t('termsModal.title')}
                     </h2>
                 </b>
                 <p>
-                    Welcome to <strong>VacApp.com</strong>, the official landing page for our livestock management application.
-                    By browsing or using this website, you agree to the following Terms and Conditions:
+                    {t('termsModal.content')}
                 </p>
 
                 <p>
@@ -100,11 +100,11 @@ export const TermsModal = ({ onAccept }: Props) => {
                             maxWidth: "240px"
                         }}
                     >
-                        I Accept the Terms
+                        {t('termsModal.accept')}
                     </button>
 
                     <button
-                        onClick={handleReject}
+                        onClick={onReject}
                         style={{
                             backgroundColor: "transparent",
                             color: "#1D3620",
@@ -116,7 +116,7 @@ export const TermsModal = ({ onAccept }: Props) => {
                             maxWidth: "240px"
                         }}
                     >
-                        I Do Not Accept
+                        {t('consent.reject', { defaultValue: 'Rechazar' })}
                     </button>
                 </div>
             </div>
