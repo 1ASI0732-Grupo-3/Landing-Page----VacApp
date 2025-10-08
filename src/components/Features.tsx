@@ -69,15 +69,15 @@ export function Features() {
                         <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/20 mt-8">
                             <div className="text-center">
                                 <div className="text-2xl font-bold text-lime-neon">+500</div>
-                                <div className="text-sm text-white/80">Granjas Activas</div>
+                                <div className="text-sm text-white/80">{t('features.cta.statsLabels.farms')}</div>
                             </div>
                             <div className="text-center">
                                 <div className="text-2xl font-bold text-lime-neon">50K+</div>
-                                <div className="text-sm text-white/80">Animales Registrados</div>
+                                <div className="text-sm text-white/80">{t('features.cta.statsLabels.animals')}</div>
                             </div>
                             <div className="text-center">
                                 <div className="text-2xl font-bold text-lime-neon">98%</div>
-                                <div className="text-sm text-white/80">Satisfacción</div>
+                                <div className="text-sm text-white/80">{t('features.cta.statsLabels.satisfaction')}</div>
                             </div>
                         </div>
                     </div>

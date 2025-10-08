@@ -37,22 +37,20 @@ export function AboutUs() {
                             <div className="bg-forest-green/5 rounded-2xl p-6">
                                 <div className="flex items-center gap-3 mb-4">
                                     <Target className="text-lime-neon" size={24} />
-                                    <h3 className="font-bold text-forest-green font-rokkitt">Nuestra Misión</h3>
+                                    <h3 className="font-bold text-forest-green font-rokkitt">{t('aboutus.mission.title')}</h3>
                                 </div>
                                 <p className="text-forest-green/70 text-sm">
-                                    Democratizar la tecnología ganadera, haciendo que herramientas profesionales 
-                                    sean accesibles para productores de todos los tamaños.
+                                    {t('aboutus.mission.description')}
                                 </p>
                             </div>
 
                             <div className="bg-lime-neon/10 rounded-2xl p-6">
                                 <div className="flex items-center gap-3 mb-4">
                                     <Globe className="text-forest-green" size={24} />
-                                    <h3 className="font-bold text-forest-green font-rokkitt">Nuestra Visión</h3>
+                                    <h3 className="font-bold text-forest-green font-rokkitt">{t('aboutus.vision.title')}</h3>
                                 </div>
                                 <p className="text-forest-green/70 text-sm">
-                                    Ser la plataforma líder en gestión ganadera en Latinoamérica, 
-                                    impulsando la sostenibilidad y productividad del sector.
+                                    {t('aboutus.vision.description')}
                                 </p>
                             </div>
                         </div>
@@ -61,15 +59,15 @@ export function AboutUs() {
                         <div className="grid grid-cols-3 gap-6 pt-6 border-t border-forest-green/20">
                             <div className="text-center">
                                 <div className="text-2xl md:text-3xl font-bold text-forest-green">2024</div>
-                                <div className="text-sm text-forest-green/70">Fundación</div>
+                                <div className="text-sm text-forest-green/70">{t('aboutus.stats.founded')}</div>
                             </div>
                             <div className="text-center">
                                 <div className="text-2xl md:text-3xl font-bold text-forest-green">15+</div>
-                                <div className="text-sm text-forest-green/70">Regiones</div>
+                                <div className="text-sm text-forest-green/70">{t('aboutus.stats.regions')}</div>
                             </div>
                             <div className="text-center">
                                 <div className="text-2xl md:text-3xl font-bold text-forest-green">24/7</div>
-                                <div className="text-sm text-forest-green/70">Soporte</div>
+                                <div className="text-sm text-forest-green/70">{t('aboutus.stats.support')}</div>
                             </div>
                         </div>
                     </div>
@@ -84,7 +82,7 @@ export function AboutUs() {
                         <div className="relative z-10">
                             <img 
                                 src={farmer} 
-                                alt="Ganadero usando VacApp"
+                                alt={t('aboutus.imageAlt')}
                                 className="w-full aspect-[4/3] object-cover rounded-3xl shadow-2xl"
                             />
                             
@@ -93,7 +91,7 @@ export function AboutUs() {
                                 <div className="flex items-center gap-3">
                                     <div className="w-3 h-3 bg-lime-neon rounded-full animate-pulse"></div>
                                     <span className="text-forest-green font-semibold text-sm">
-                                        Tecnología en el campo
+                                        {t('aboutus.badge')}
                                     </span>
                                 </div>
                             </div>
@@ -105,10 +103,10 @@ export function AboutUs() {
                 <div className="bg-gradient-to-br from-forest-green/5 to-lime-neon/5 rounded-3xl p-8 md:p-12">
                     <div className="text-center mb-12">
                         <h3 className="text-2xl md:text-3xl font-bold text-forest-green font-rokkitt mb-4">
-                            Nuestros Valores
+                            {t('aboutus.values.title')}
                         </h3>
                         <p className="text-forest-green/70 font-mulish max-w-2xl mx-auto">
-                            Los principios que guían cada decisión en VacApp
+                            {t('aboutus.values.subtitle')}
                         </p>
                     </div>
 
@@ -117,9 +115,9 @@ export function AboutUs() {
                             <div className="w-16 h-16 bg-lime-neon/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-lime-neon transition-all duration-300">
                                 <Leaf className="text-forest-green group-hover:text-white" size={24} />
                             </div>
-                            <h4 className="font-bold text-forest-green mb-2 font-rokkitt">Sostenibilidad</h4>
+                            <h4 className="font-bold text-forest-green mb-2 font-rokkitt">{t('aboutus.values.sustainability.title')}</h4>
                             <p className="text-forest-green/70 text-sm">
-                                Tecnología que respeta el medio ambiente y promueve prácticas ganaderas responsables.
+                                {t('aboutus.values.sustainability.description')}
                             </p>
                         </div>
 
@@ -127,9 +125,9 @@ export function AboutUs() {
                             <div className="w-16 h-16 bg-forest-green/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-forest-green transition-all duration-300">
                                 <Users className="text-forest-green group-hover:text-white" size={24} />
                             </div>
-                            <h4 className="font-bold text-forest-green mb-2 font-rokkitt">Comunidad</h4>
+                            <h4 className="font-bold text-forest-green mb-2 font-rokkitt">{t('aboutus.values.community.title')}</h4>
                             <p className="text-forest-green/70 text-sm">
-                                Construimos junto a ganaderos, entendiendo sus necesidades reales del día a día.
+                                {t('aboutus.values.community.description')}
                             </p>
                         </div>
 
@@ -137,9 +135,9 @@ export function AboutUs() {
                             <div className="w-16 h-16 bg-lime-neon/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-lime-neon transition-all duration-300">
                                 <Shield className="text-forest-green group-hover:text-white" size={24} />
                             </div>
-                            <h4 className="font-bold text-forest-green mb-2 font-rokkitt">Confiabilidad</h4>
+                            <h4 className="font-bold text-forest-green mb-2 font-rokkitt">{t('aboutus.values.reliability.title')}</h4>
                             <p className="text-forest-green/70 text-sm">
-                                Datos seguros, funcionamiento estable y soporte cuando más lo necesitas.
+                                {t('aboutus.values.reliability.description')}
                             </p>
                         </div>
                     </div>

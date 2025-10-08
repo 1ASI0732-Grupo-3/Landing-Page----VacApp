@@ -6,6 +6,13 @@ export function CallToAction() {
     const benefits = t('callToAction.benefits', { returnObjects: true }) as string[];
     const trustBadges = t('callToAction.trust.badges', { returnObjects: true }) as string[];
 
+    const scrollToMobile = () => {
+        const el = document.getElementById('app') || document.getElementById('mobile-app');
+        if (el) {
+            window.scrollTo({ top: el.offsetTop, behavior: 'smooth' });
+        }
+    };
+
     return (
         <section className="py-20 bg-gradient-to-br from-forest-green to-forest-green/90 text-white relative overflow-hidden">
             {/* Background decorations */}
@@ -37,24 +44,24 @@ export function CallToAction() {
 
                     {/* Action Buttons */}
                     <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                        <a 
-                            href="https://tu-app-web.com/register"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <button
+                            onClick={() => {
+                                window.location.href = 'https://vacappfrontend.netlify.app/auth/register';
+                            }}
                             className="group bg-lime-neon text-forest-green px-8 py-4 rounded-full font-bold text-lg hover:bg-white transition-all duration-300 transform hover:scale-105 flex items-center gap-3"
                         >
                             <Globe size={24} />
                             {t('callToAction.buttons.web')}
                             <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-                        </a>
-                        
-                        <a 
-                            href="#app"
+                        </button>
+
+                        <button
+                            onClick={scrollToMobile}
                             className="group border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-forest-green transition-all duration-300 flex items-center gap-3"
                         >
                             <Smartphone size={24} />
                             {t('callToAction.buttons.mobile')}
-                        </a>
+                        </button>
                     </div>
 
                     {/* Trust Indicators */}

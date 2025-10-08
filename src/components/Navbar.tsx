@@ -26,7 +26,7 @@ export function Navbar() {
                 {/* Auth Buttons - Desktop */}
                 <div className="hidden md:flex items-center gap-3">
                     <a 
-                        href="https://tu-app-web.com/login"
+                        href="https://vacappfrontend.netlify.app/auth/login"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-forest-green hover:text-lime-neon transition-all duration-300 rounded-lg hover:bg-lime-neon/10"
@@ -35,7 +35,7 @@ export function Navbar() {
                         {t('auth.login.title')}
                     </a>
                     <a 
-                        href="https://tu-app-web.com/register"
+                        href="https://vacappfrontend.netlify.app/auth/register"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-forest-green hover:bg-lime-neon hover:text-forest-green transition-all duration-300 rounded-lg transform hover:scale-105"
@@ -90,7 +90,7 @@ function Sidebar() {
                     {/* Mobile Auth Buttons */}
                     <div className="flex flex-col gap-3 pt-4 border-t border-forest-green/20">
                         <a 
-                            href="https://tu-app-web.com/login"
+                            href="https://vacappfrontend.netlify.app/auth/login"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-3 px-4 py-3 text-sm font-medium text-forest-green hover:text-lime-neon transition-all duration-300 rounded-lg hover:bg-lime-neon/10"
@@ -100,7 +100,7 @@ function Sidebar() {
                             {t('auth.login.title')}
                         </a>
                         <a 
-                            href="https://tu-app-web.com/register"
+                            href="https://vacappfrontend.netlify.app/auth/register"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-3 px-4 py-3 text-sm font-medium text-white bg-forest-green hover:bg-lime-neon hover:text-forest-green transition-all duration-300 rounded-lg"

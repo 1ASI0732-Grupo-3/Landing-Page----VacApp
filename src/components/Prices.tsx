@@ -17,7 +17,7 @@ export function Prices() {
             {t('prices.title')}
           </h2>
           <p className="text-lg md:text-xl text-forest-green/70 font-mulish max-w-2xl mx-auto">
-            Elige el plan perfecto para tu operación ganadera. Todos incluyen soporte técnico y actualizaciones.
+            {t('prices.subtitle')}
           </p>
         </div>
 
@@ -38,13 +38,13 @@ export function Prices() {
         {/* Bottom CTA */}
         <div className="text-center mt-16 p-8 bg-forest-green/5 rounded-2xl border border-forest-green/10">
           <h3 className="text-2xl font-bold text-forest-green mb-4 font-rokkitt">
-            ¿Necesitas un plan personalizado?
+            {t('prices.customTitle')}
           </h3>
           <p className="text-forest-green/70 mb-6 font-mulish">
-            Contacta con nuestro equipo para soluciones empresariales a medida
+            {t('prices.customDesc')}
           </p>
-          <button className="bg-forest-green text-white px-8 py-3 rounded-full font-semibold hover:bg-lime-neon hover:text-forest-green transition-all duration-300 transform hover:scale-105 flex items-center gap-2 mx-auto">
-            Contactar Ventas
+          <button onClick={() => { window.location.href = 'https://vacappfrontend.netlify.app/auth/login'; }} className="bg-forest-green text-white px-8 py-3 rounded-full font-semibold hover:bg-lime-neon hover:text-forest-green transition-all duration-300 transform hover:scale-105 flex items-center gap-2 mx-auto">
+            {t('prices.cta.enterprise')}
             <ArrowRight size={16} />
           </button>
         </div>
@@ -66,6 +66,7 @@ function PriceCard({
   onHover: () => void;
   onLeave: () => void;
 }) {
+  const { t } = useTranslation();
   const isPopular = index === 1; // Plan del medio como popular
   const isEnterprise = index === 2;
   
@@ -85,7 +86,7 @@ function PriceCard({
         <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
           <div className="bg-lime-neon text-forest-green px-4 py-2 rounded-full text-sm font-bold flex items-center gap-1">
             <Star size={14} />
-            Más Popular
+            {t('prices.popular')}
           </div>
         </div>
       )}
@@ -106,7 +107,7 @@ function PriceCard({
           <span className="text-4xl font-bold">{plan.price}</span>
           {plan.price !== "Gratis" && plan.price !== "免费" && plan.price !== "Free" && (
             <span className={`text-sm ml-1 ${isPopular ? 'text-white/70' : 'text-forest-green/60'}`}>
-              /mes
+              {t('prices.perMonth')}
             </span>
           )}
         </div>
@@ -139,17 +140,26 @@ function PriceCard({
             ? 'bg-lime-neon text-forest-green hover:bg-white'
             : 'bg-forest-green text-white hover:bg-lime-neon hover:text-forest-green'
         }`}
+        onClick={() => {
+          if (index === 2) {
+            // Enterprise -> login (contact sales)
+            window.location.href = 'https://vacappfrontend.netlify.app/auth/login';
+          } else {
+            // Starter/Premium -> register
+            window.location.href = 'https://vacappfrontend.netlify.app/auth/register';
+          }
+        }}
       >
-        {index === 0 ? 'Comenzar Gratis' : 
-         index === 1 ? 'Obtener Premium' : 
-         'Contactar Ventas'}
+  {index === 0 ? t('prices.cta.free') : 
+   index === 1 ? t('prices.cta.premium') : 
+   t('prices.cta.enterprise')}
       </button>
 
       {/* Enterprise Features */}
       {isEnterprise && (
         <div className="mt-4 p-3 bg-forest-green/5 rounded-lg border border-forest-green/10">
           <p className="text-xs text-forest-green/60 text-center">
-            Incluye integración personalizada y soporte dedicado
+            {t('prices.enterpriseNote', { defaultValue: 'Incluye integración personalizada y soporte dedicado' })}
           </p>
         </div>
       )}

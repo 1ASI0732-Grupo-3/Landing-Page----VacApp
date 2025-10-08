@@ -44,19 +44,19 @@ export function Testimonials() {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                         <div>
                             <div className="text-3xl md:text-4xl font-bold text-lime-neon mb-2">500+</div>
-                            <div className="text-white/80">Granjas Activas</div>
+                            <div className="text-white/80">{t('testimonials.stats.farms')}</div>
                         </div>
                         <div>
                             <div className="text-3xl md:text-4xl font-bold text-lime-neon mb-2">4.8★</div>
-                            <div className="text-white/80">Rating Promedio</div>
+                            <div className="text-white/80">{t('testimonials.stats.avgRating')}</div>
                         </div>
                         <div>
                             <div className="text-3xl md:text-4xl font-bold text-lime-neon mb-2">50K+</div>
-                            <div className="text-white/80">Animales Registrados</div>
+                            <div className="text-white/80">{t('testimonials.stats.animals')}</div>
                         </div>
                         <div>
                             <div className="text-3xl md:text-4xl font-bold text-lime-neon mb-2">99.9%</div>
-                            <div className="text-white/80">Uptime</div>
+                            <div className="text-white/80">{t('testimonials.stats.uptime')}</div>
                         </div>
                     </div>
                 </div>

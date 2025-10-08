@@ -1,14 +1,14 @@
 import mockup from "../assets/mobile_app.webp"
-import apple from "../assets/appstore.webp"
-import google from "../assets/googleplay.webp"
 import { useTranslation } from "react-i18next";
-import { Smartphone, Download, Star, Users, Shield, Zap } from "lucide-react";
+import { Smartphone, Download, Star, Users, Shield, Zap, Apple, Play } from "lucide-react";
 
 export function MobileApp() {
     const { t } = useTranslation();
 
     return (
         <section className="py-20 bg-gradient-to-b from-white to-light-gray overflow-hidden" id="app">
+            {/* anchor alias for smooth scroll */}
+            <div id="mobile-app" className="sr-only" />
             <div className="max-w-7xl mx-auto px-4">
                 
                 {/* Header */}
@@ -37,10 +37,10 @@ export function MobileApp() {
                                     <div className="p-2 bg-lime-neon/20 rounded-lg">
                                         <Download className="text-lime-neon" size={20} />
                                     </div>
-                                    <h3 className="font-semibold text-forest-green">Acceso Offline</h3>
+                                    <h3 className="font-semibold text-forest-green">{t('mobileApp.cards.offline.title')}</h3>
                                 </div>
                                 <p className="text-sm text-forest-green/70">
-                                    Trabaja sin conexión y sincroniza cuando tengas internet
+                                    {t('mobileApp.cards.offline.desc')}
                                 </p>
                             </div>
 
@@ -49,10 +49,10 @@ export function MobileApp() {
                                     <div className="p-2 bg-lime-neon/20 rounded-lg">
                                         <Zap className="text-lime-neon" size={20} />
                                     </div>
-                                    <h3 className="font-semibold text-forest-green">Rápido & Eficiente</h3>
+                                    <h3 className="font-semibold text-forest-green">{t('mobileApp.cards.fast.title')}</h3>
                                 </div>
                                 <p className="text-sm text-forest-green/70">
-                                    Interfaz optimizada para uso diario en el campo
+                                    {t('mobileApp.cards.fast.desc')}
                                 </p>
                             </div>
 
@@ -61,10 +61,10 @@ export function MobileApp() {
                                     <div className="p-2 bg-lime-neon/20 rounded-lg">
                                         <Shield className="text-lime-neon" size={20} />
                                     </div>
-                                    <h3 className="font-semibold text-forest-green">Datos Seguros</h3>
+                                    <h3 className="font-semibold text-forest-green">{t('mobileApp.cards.secure.title')}</h3>
                                 </div>
                                 <p className="text-sm text-forest-green/70">
-                                    Respaldo automático en la nube de toda tu información
+                                    {t('mobileApp.cards.secure.desc')}
                                 </p>
                             </div>
 
@@ -73,10 +73,10 @@ export function MobileApp() {
                                     <div className="p-2 bg-lime-neon/20 rounded-lg">
                                         <Users className="text-lime-neon" size={20} />
                                     </div>
-                                    <h3 className="font-semibold text-forest-green">Multi-usuario</h3>
+                                    <h3 className="font-semibold text-forest-green">{t('mobileApp.cards.multiuser.title')}</h3>
                                 </div>
                                 <p className="text-sm text-forest-green/70">
-                                    Comparte acceso con tu equipo de trabajo
+                                    {t('mobileApp.cards.multiuser.desc')}
                                 </p>
                             </div>
                         </div>
@@ -89,48 +89,54 @@ export function MobileApp() {
                                         <Star className="text-lime-neon" size={16} />
                                         <span className="text-2xl font-bold text-forest-green">4.8</span>
                                     </div>
-                                    <p className="text-sm text-forest-green/70">Rating</p>
+                                    <p className="text-sm text-forest-green/70">{t('mobileApp.stats.rating')}</p>
                                 </div>
                                 <div>
                                     <div className="text-2xl font-bold text-forest-green mb-1">10K+</div>
-                                    <p className="text-sm text-forest-green/70">Descargas</p>
+                                    <p className="text-sm text-forest-green/70">{t('mobileApp.stats.downloads')}</p>
                                 </div>
                                 <div>
                                     <div className="text-2xl font-bold text-forest-green mb-1">500+</div>
-                                    <p className="text-sm text-forest-green/70">Granjas</p>
+                                    <p className="text-sm text-forest-green/70">{t('mobileApp.stats.farms')}</p>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Download Buttons */}
+                        {/* Download Buttons with icons */}
                         <div className="space-y-4">
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <a 
                                     href="#" 
                                     className="group flex-1 bg-black text-white rounded-2xl p-4 flex items-center gap-4 hover:bg-forest-green transition-all duration-300 transform hover:scale-105"
+                                    aria-label="Download on the App Store"
                                 >
-                                    <img src={apple} alt="App Store" className="w-8 h-8" />
+                                    <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
+                                        <Apple className="text-white" size={20} />
+                                    </div>
                                     <div>
-                                        <div className="text-xs opacity-80">Descargar en</div>
-                                        <div className="font-semibold">App Store</div>
+                                        <div className="text-xs opacity-80">{t('mobileApp.store.appStoreTop')}</div>
+                                        <div className="font-semibold">{t('mobileApp.store.appStoreName')}</div>
                                     </div>
                                 </a>
                                 
                                 <a 
                                     href="#" 
                                     className="group flex-1 bg-black text-white rounded-2xl p-4 flex items-center gap-4 hover:bg-forest-green transition-all duration-300 transform hover:scale-105"
+                                    aria-label="Get it on Google Play"
                                 >
-                                    <img src={google} alt="Google Play" className="w-8 h-8" />
+                                    <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
+                                        <Play className="text-white" size={20} />
+                                    </div>
                                     <div>
-                                        <div className="text-xs opacity-80">Disponible en</div>
-                                        <div className="font-semibold">Google Play</div>
+                                        <div className="text-xs opacity-80">{t('mobileApp.store.playTop')}</div>
+                                        <div className="font-semibold">{t('mobileApp.store.playName')}</div>
                                     </div>
                                 </a>
                             </div>
                             
                             <div className="text-center">
                                 <p className="text-sm text-forest-green/60">
-                                    📱 Compatible con iOS 13+ y Android 7+ • 🌐 Sincronización automática con la web
+                                    {t('mobileApp.compatibility')}
                                 </p>
                             </div>
                         </div>
@@ -153,10 +159,10 @@ export function MobileApp() {
                                 
                                 {/* Floating badges */}
                                 <div className="absolute -left-4 top-1/4 bg-lime-neon text-forest-green px-3 py-2 rounded-full text-sm font-semibold shadow-lg animate-bounce">
-                                    ✨ Nuevo
+                                    ✨ {t('mobileApp.badges.new')}
                                 </div>
                                 <div className="absolute -right-4 top-2/3 bg-forest-green text-white px-3 py-2 rounded-full text-sm font-semibold shadow-lg animate-pulse">
-                                    🚀 Gratis
+                                    🚀 {t('mobileApp.badges.free')}
                                 </div>
                             </div>
                         </div>

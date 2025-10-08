@@ -13,6 +13,8 @@
         "title": "About Us",
         "description": "VacApp is a mobile application created for farmers and veterinarians in Peru. Our mission is to facilitate livestock management through an accessible platform, even for those without prior technological experience. From animal registration to report generation, VacApp is made for you.",
         "subtitle": "Connecting livestock tradition with technological solutions.",
+        "imageAlt": "Farmer using VacApp",
+        "badge": "Technology in the field",
         "mission": {
             "title": "Our Mission",
             "description": "Democratize livestock technology, making professional tools accessible to producers of all sizes."
@@ -44,20 +46,25 @@
         }
     },
     "features": {
-        "title": "Características Clave",
-        "subtitle": "Herramientas profesionales diseñadas específicamente para la gestión ganadera moderna",
+        "title": "Key Features",
+        "subtitle": "Professional tools designed specifically for modern livestock management",
         "cta": {
-            "title": "Optimiza tu Producción Ganadera",
-            "description": "Únete a cientos de ganaderos que ya transformaron su gestión con VacApp. Reduce costos, mejora la salud del ganado y aumenta tu productividad.",
+            "title": "Optimize Your Livestock Production",
+            "description": "Join hundreds of farmers who already transformed their management with VacApp. Reduce costs, improve herd health, and increase productivity.",
             "buttons": {
-                "trial": "Comenzar Prueba Gratuita",
-                "demo": "Ver Demo en Vivo"
+                "trial": "Start Free Trial",
+                "demo": "Watch Live Demo"
             },
             "stats": [
-                { "value": "+500", "label": "Granjas Activas" },
-                { "value": "50K+", "label": "Animales Registrados" },
-                { "value": "98%", "label": "Satisfacción" }
-            ]
+                { "value": "+500", "label": "Active Farms" },
+                { "value": "50K+", "label": "Registered Animals" },
+                { "value": "98%", "label": "Satisfaction" }
+            ],
+            "statsLabels": {
+                "farms": "Active Farms",
+                "animals": "Registered Animals",
+                "satisfaction": "Satisfaction"
+            }
         },
         "list": [
             {
@@ -88,6 +95,16 @@
     },
     "prices": {
         "title": "Choose Your Plan",
+        "subtitle": "Choose the perfect plan for your operation. All include technical support and updates.",
+        "popular": "Most Popular",
+        "perMonth": "/month",
+        "cta": {
+            "free": "Start Free",
+            "premium": "Get Premium",
+            "enterprise": "Contact Sales"
+        },
+        "customTitle": "Need a custom plan?",
+        "customDesc": "Contact our team for tailored enterprise solutions",
         "plans": [
             {
                 "name": "Starter",
@@ -136,11 +153,39 @@
     },
     "mobileApp": {
         "title": "Download our app now",
-        "description": "Experience the full power of VacApp on your Android and iOS devices."
+        "description": "Experience the full power of VacApp on your Android and iOS devices.",
+        "cards": {
+            "offline": { "title": "Offline Access", "desc": "Work without connection and sync when you have internet" },
+            "fast": { "title": "Fast & Efficient", "desc": "Interface optimized for daily field use" },
+            "secure": { "title": "Secure Data", "desc": "Automatic cloud backup of all your information" },
+            "multiuser": { "title": "Multi-user", "desc": "Share access with your work team" }
+        },
+        "stats": {
+            "rating": "Rating",
+            "downloads": "Downloads",
+            "farms": "Farms"
+        },
+        "store": {
+            "appStoreTop": "Download on",
+            "appStoreName": "App Store",
+            "playTop": "Available on",
+            "playName": "Google Play"
+        },
+        "badges": {
+            "new": "New",
+            "free": "Free"
+        },
+        "compatibility": "Compatible with iOS 13+ and Android 7+ • Automatic sync with the web"
     },
     "testimonials": {
         "title": "What our users say",
         "subtitle": "Over 500 farmers already trust VacApp to manage their operations",
+        "stats": {
+            "farms": "Active Farms",
+            "avgRating": "Average Rating",
+            "animals": "Registered Animals",
+            "uptime": "Uptime"
+        },
         "users": [
             {
                 "name": "Carlos Mendoza",

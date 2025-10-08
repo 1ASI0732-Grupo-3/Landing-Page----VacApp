@@ -12,7 +12,38 @@
     "aboutus": {
         "title": "关于我们",
         "description": "VacApp是一款专为秘鲁牲畜饲养者和兽医创建的移动应用。我们的使命是通过一个易于使用的平台促进牲畜管理，即使是没有技术经验的人也能轻松使用。从动物登记到报告生成，VacApp是为您量身定制的。",
-        "subtitle": "我们将传统畜牧业与技术解决方案相连接。"
+        "subtitle": "我们将传统畜牧业与技术解决方案相连接。",
+        "imageAlt": "使用VacApp的农牧民",
+        "badge": "科技走进田间",
+        "mission": {
+            "title": "我们的使命",
+            "description": "让畜牧技术更大众化，使各类规模的生产者都能使用专业工具。"
+        },
+        "vision": {
+            "title": "我们的愿景",
+            "description": "成为拉丁美洲领先的畜牧管理平台，推动行业的可持续性与生产力。"
+        },
+        "values": {
+            "title": "我们的价值观",
+            "subtitle": "引导 VacApp 每个决策的原则",
+            "sustainability": {
+                "title": "可持续性",
+                "description": "尊重环境并推动负责任的牧业实践的技术。"
+            },
+            "community": {
+                "title": "社区",
+                "description": "与牧民共同构建，理解他们日常的真实需求。"
+            },
+            "reliability": {
+                "title": "可靠性",
+                "description": "数据安全，运行稳定，并在需要时提供支持。"
+            }
+        },
+        "stats": {
+            "founded": "成立",
+            "regions": "地区",
+            "support": "支持"
+        }
     },
     "features": {
         "title": "核心功能",
@@ -28,7 +59,12 @@
                 { "value": "+500", "label": "活跃农场" },
                 { "value": "50K+", "label": "注册动物" },
                 { "value": "98%", "label": "满意度" }
-            ]
+            ],
+            "statsLabels": {
+                "farms": "活跃农场",
+                "animals": "注册动物",
+                "satisfaction": "满意度"
+            }
         },
         "list": [
             {
@@ -59,6 +95,16 @@
     },
     "prices": {
         "title": "选择您的计划",
+        "subtitle": "为您的运营选择完美方案。所有计划均包含技术支持和更新。",
+        "popular": "最受欢迎",
+        "perMonth": "/月",
+        "cta": {
+            "free": "免费开始",
+            "premium": "获取高级版",
+            "enterprise": "联系销售"
+        },
+        "customTitle": "需要定制方案吗？",
+        "customDesc": "联系我们的团队，获取企业级定制化解决方案",
         "plans": [
             {
                 "name": "入门版",
@@ -107,11 +153,39 @@
     },
     "mobileApp": {
         "title": "立即下载我们的应用",
-        "description": "在Android和iOS设备上体验VacApp的全部功能。"
+        "description": "在Android和iOS设备上体验VacApp的全部功能。",
+        "cards": {
+            "offline": { "title": "离线访问", "desc": "无网络也可使用，联网后自动同步" },
+            "fast": { "title": "快速高效", "desc": "为日常田间使用优化的界面" },
+            "secure": { "title": "数据安全", "desc": "所有信息自动云端备份" },
+            "multiuser": { "title": "多用户", "desc": "与您的团队共享访问权限" }
+        },
+        "stats": {
+            "rating": "评分",
+            "downloads": "下载量",
+            "farms": "农场"
+        },
+        "store": {
+            "appStoreTop": "下载于",
+            "appStoreName": "App Store",
+            "playTop": "可在以下获取",
+            "playName": "Google Play"
+        },
+        "badges": {
+            "new": "新品",
+            "free": "免费"
+        },
+        "compatibility": "兼容 iOS 13+ 和 Android 7+ • 与网页自动同步"
     },
     "testimonials": {
         "title": "用户评价",
         "subtitle": "已有500多名农民信任VacApp管理他们的运营",
+        "stats": {
+            "farms": "活跃农场",
+            "avgRating": "平均评分",
+            "animals": "注册动物",
+            "uptime": "在线率"
+        },
         "users": [
             {
                 "name": "卡洛斯·门多萨",

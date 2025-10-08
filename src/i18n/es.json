@@ -13,6 +13,8 @@
         "title": "Nosotros",
         "description": "VacApp es una aplicación móvil creada para ganaderos y veterinarios en Perú. Nuestra misión es facilitar el manejo ganadero a través de una plataforma accesible, incluso para aquellos sin experiencia tecnológica previa. Desde el registro de animales hasta la generación de reportes, VacApp está hecho para ti.",
         "subtitle": "Conectamos la tradición ganadera con soluciones tecnológicas.",
+        "imageAlt": "Ganadero usando VacApp",
+        "badge": "Tecnología en el campo",
         "mission": {
             "title": "Nuestra Misión",
             "description": "Democratizar la tecnología ganadera, haciendo que herramientas profesionales sean accesibles para productores de todos los tamaños."
@@ -57,7 +59,12 @@
                 { "value": "+500", "label": "Granjas Activas" },
                 { "value": "50K+", "label": "Animales Registrados" },
                 { "value": "98%", "label": "Satisfacción" }
-            ]
+            ],
+            "statsLabels": {
+                "farms": "Granjas Activas",
+                "animals": "Animales Registrados",
+                "satisfaction": "Satisfacción"
+            }
         },
         "list": [
             {
@@ -88,6 +95,16 @@
     },
     "prices": {
         "title": "Elige Tu Plan",
+        "subtitle": "Elige el plan perfecto para tu operación. Todos incluyen soporte técnico y actualizaciones.",
+        "popular": "Más Popular",
+        "perMonth": "/mes",
+        "cta": {
+            "free": "Comenzar Gratis",
+            "premium": "Obtener Premium",
+            "enterprise": "Contactar Ventas"
+        },
+        "customTitle": "¿Necesitas un plan personalizado?",
+        "customDesc": "Contacta con nuestro equipo para soluciones empresariales a medida",
         "plans": [
             {
                 "name": "Inicial",
@@ -136,11 +153,39 @@
     },
     "mobileApp": {
         "title": "Descarga nuestra app ahora",
-        "description": "Experimenta todo el poder de VacApp en tus dispositivos Android e iOS."
+        "description": "Experimenta todo el poder de VacApp en tus dispositivos Android e iOS.",
+        "cards": {
+            "offline": { "title": "Acceso Offline", "desc": "Trabaja sin conexión y sincroniza cuando tengas internet" },
+            "fast": { "title": "Rápido & Eficiente", "desc": "Interfaz optimizada para uso diario en el campo" },
+            "secure": { "title": "Datos Seguros", "desc": "Respaldo automático en la nube de toda tu información" },
+            "multiuser": { "title": "Multi-usuario", "desc": "Comparte acceso con tu equipo de trabajo" }
+        },
+        "stats": {
+            "rating": "Rating",
+            "downloads": "Descargas",
+            "farms": "Granjas"
+        },
+        "store": {
+            "appStoreTop": "Descargar en",
+            "appStoreName": "App Store",
+            "playTop": "Disponible en",
+            "playName": "Google Play"
+        },
+        "badges": {
+            "new": "Nuevo",
+            "free": "Gratis"
+        },
+        "compatibility": "Compatible con iOS 13+ y Android 7+ • Sincronización automática con la web"
     },
     "testimonials": {
         "title": "Lo que dicen nuestros usuarios",
         "subtitle": "Más de 500 ganaderos ya confían en VacApp para gestionar sus operaciones",
+        "stats": {
+            "farms": "Granjas Activas",
+            "avgRating": "Rating Promedio",
+            "animals": "Animales Registrados",
+            "uptime": "Disponibilidad"
+        },
         "users": [
             {
                 "name": "Carlos Mendoza",
